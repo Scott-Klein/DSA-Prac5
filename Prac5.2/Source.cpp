@@ -12,7 +12,6 @@ int main()
 	return 0;
 }
 
-
 void printLines(int m)
 {
 	if (m > 0)
@@ -21,7 +20,6 @@ void printLines(int m)
 		printLines(m - 1);
 		printStars(m);
 	}
-
 }
 
 void printStars(int n)
@@ -35,5 +33,4 @@ void printStars(int n)
 		cout << "*";
 		printStars(n - 1);
 	}
-
 }
