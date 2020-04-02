@@ -7,6 +7,7 @@ void printLines(int m);
 
 int main()
 {
+	//printStars(4);
 	printLines(4);
 	return 0;
 }
@@ -18,15 +19,21 @@ void printLines(int m)
 	{
 		printStars(m);
 		printLines(m - 1);
+		printStars(m);
 	}
-	printStars(m);
+
 }
 
 void printStars(int n)
 {
-	for (int i = 0; i < n; i++)
+	if (n == 0)
+	{
+		cout << endl;
+	}
+	else
 	{
 		cout << "*";
+		printStars(n - 1);
 	}
-	cout << endl;
+
 }
